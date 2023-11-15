@@ -122,7 +122,7 @@ reset
         return true;
     }
 
-    if (settings["useStageSplits"] && old.stage > current.stage)
+    if (settings["useStageSplits"] && current.campaignLevelIndex == 0 && old.stage > current.stage)
     {
         return true;
     }
