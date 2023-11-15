@@ -1,11 +1,10 @@
-
-state("ThankYouVeryCool-Win64-Shipping", "epic patch 5.2") {
-    float fullTimer: 0x5DCAF40, 0x118, 0xB68;
-    bool isOnMainMenu: 0x5C838E0, 0x8F0, 0xA0, 0x3E0, 0x320;
-    // int campaignLevelIndex:
-    // int stage:
-    // uint isFFx4WhenLevelIsNewType:
-}
+// state("ThankYouVeryCool-Win64-Shipping", "epic patch 5.2") {
+//     float fullTimer: 0x5DCAF40, 0x118, 0xB68;
+//     bool isOnMainMenu: 0x5C838E0, 0x8F0, 0xA0, 0x3E0, 0x320;
+//     // int campaignLevelIndex:
+//     // int stage:
+//     // uint isFFx4WhenLevelIsNewType:
+// }
 
 state("ThankYouVeryCool-Win64-Shipping", "steam patch 5.1") {
     float fullTimer: 0x5B1A2C0, 0x118, 0xB68;
