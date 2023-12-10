@@ -22,6 +22,14 @@ state("ThankYouVeryCool-Win64-Shipping", "steam patch 5.2") {
     uint isFFx4WhenLevelIsNewType: 0x5B1A300, 0x118, 0xD80, 0x2E0, 0x398; // I know, it's dirty but it works. if you got a better way dm me 
 }
 
+state("ThankYouVeryCool-Win64-Shipping", "steam patch 5.3") {
+    float fullTimer: 0x5B28C00, 0x118, 0xB68;
+    bool isOnMainMenu: 0x59E15A0, 0xF70, 0xA0, 0x3E0, 0x320;
+    int campaignLevelIndex: 0x5B28C00, 0x118, 0xD80, 0x2F8;
+    int stage: 0x5B28C00, 0x118, 0xD80, 0x2E0, 0x360;
+    uint isFFx4WhenLevelIsNewType: 0x5B28C00, 0x118, 0xD80, 0x2E0, 0x398;
+}
+
 startup
 {
     settings.Add("useStageSplits", true, "Split on stage change");
@@ -55,10 +63,12 @@ init
         //     break;
         case "A8C57AD035ED26B6E1DCED0499EBFA22":
             version = "steam patch 5.1";
-            vars.SaveOffsetPath = new DeepPointer(0x5B15EF8, 0x130, 0x38, 0x70, 0x459);
             break;
         case "76EAB92EF3754360BAB05B7D535C6956":
             version = "steam patch 5.2";
+            break;
+        case "5CB50DA54A0E6718DDE1E1767261E1E1":
+            version = "steam patch 5.3";
             break;
         default:
             MessageBox.Show
