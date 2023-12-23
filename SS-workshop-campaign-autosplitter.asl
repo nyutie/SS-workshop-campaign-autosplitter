@@ -31,7 +31,7 @@ state("ThankYouVeryCool-Win64-Shipping", "steam patch 5.3") {
 }
 
 state("ThankYouVeryCool-Win64-Shipping", "steam patch 5.3.1") {
-    float levelTimer: 0x5B28C80, 0x118, 0xB68;
+    float fullTimer: 0x5B28C80, 0x118, 0xB68;
     bool isOnMainMenu: 0x59E1620, 0xF70, 0xA0, 0x3E0, 0x320;
     int campaignLevelIndex: 0x5B28C80, 0x118, 0xD80, 0x2F8;
     int stage: 0x5B28C80, 0x118, 0xD80, 0x2E0, 0x360;
